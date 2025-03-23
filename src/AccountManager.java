@@ -17,6 +17,14 @@ public class AccountManager {
         scanner.nextLine();
         System.out.print("Enter Amount: ");
         double amount = scanner.nextDouble();
+        while(true) {
+            if (amount < 0) {
+                System.out.println("Enter a valid amount!!");
+                amount = scanner.nextDouble();
+            } else {
+                break;
+            }
+        }
         scanner.nextLine();
         System.out.print("Enter 4 digit Pin: ");
         String pin = scanner.nextLine();
@@ -72,6 +80,14 @@ public class AccountManager {
         scanner.nextLine();
         System.out.print("Enter Amount: ");
         double amount = scanner.nextDouble();
+        while(true) {
+            if (amount < 0) {
+                System.out.println("Enter a valid amount!!");
+                amount = scanner.nextDouble();
+            } else {
+                break;
+            }
+        }
         scanner.nextLine();
         System.out.print("Enter 4 digit Pin: ");
         String pin = scanner.nextLine();
@@ -127,6 +143,14 @@ public class AccountManager {
         scanner.nextLine();
         System.out.print("Enter amount: ");
         double amount = scanner.nextDouble();
+        while(true) {
+            if (amount < 0) {
+                System.out.println("Enter a valid amount!!");
+                amount = scanner.nextDouble();
+            } else {
+                break;
+            }
+        }
         scanner.nextLine();
         System.out.print("Enter Security pin: ");
         String pin = scanner.nextLine();

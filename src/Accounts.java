@@ -17,6 +17,15 @@ class Accounts {
             String fullName = scanner.nextLine();
             System.out.println("Initial Balance: ");
             double balance = scanner.nextDouble();
+            while(true){
+                if(balance < 0){
+                    System.out.println("Enter a valid amount!!");
+                    balance = scanner.nextDouble();
+                }
+                else{
+                    break;
+                }
+            }
             scanner.nextLine();
             System.out.println("4 digit Security Pin: ");
             String pin = scanner.nextLine();
